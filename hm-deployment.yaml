@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo
+  name: demohm
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: demo
+      app: demohm
   template:
     metadata:
       labels:
-        app: demo
+        app: demohm
     spec:
       containers:
         - name: health-monitor
@@ -23,10 +23,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: demo
+  name: demohm
 spec:
   selector:
-    app: demo
+    app: demohm
   ports:
     - protocol: TCP
       port: 8081
