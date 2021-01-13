@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: orbit-controller
-          image: dimuthucs/oc:<<build_number>>
+          image: gratien20191317cccw/oc:<<build_number>>
           ports:
             - containerPort: 8082
          
