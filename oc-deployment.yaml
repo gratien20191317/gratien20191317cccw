@@ -13,10 +13,10 @@ spec:
         app: demo
     spec:
       containers:
-        - name: constellation-manager
-          image: dimuthucs/cm:<<build_number>>
+        - name: orbit-controller
+          image: dimuthucs/oc:<<build_number>>
           ports:
-            - containerPort: 8080
+            - containerPort: 8082
          
 # service type loadbalancer
 ---
@@ -29,6 +29,6 @@ spec:
     app: demo
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: 8082
+      targetPort: 8082
   type: LoadBalancer

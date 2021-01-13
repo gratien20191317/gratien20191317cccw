@@ -13,10 +13,10 @@ spec:
         app: demo
     spec:
       containers:
-        - name: constellation-manager
-          image: dimuthucs/cm:<<build_number>>
+        - name: health-monitor
+          image: dimuthucs/hm:<<build_number>>
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
          
 # service type loadbalancer
 ---
@@ -29,6 +29,6 @@ spec:
     app: demo
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: 8081
+      targetPort: 8081
   type: LoadBalancer
