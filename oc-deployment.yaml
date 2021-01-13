@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: orbit-controller
-          image: gratien20191317/oc:<<build_number>>
+          image: gratien20191317/prodoc:<<build_number>>
           ports:
             - containerPort: 8082
          
