@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demohm
-  namespace: prodenv
+  namespace: devenv
 spec:
   replicas: 1
   selector:
