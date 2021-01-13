@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: constellation-manager
-          image: dimuthucs/cm:<<build_number>>
+          image: gratien20191317cccw/cm:<<build_number>>
           ports:
             - containerPort: 8080
          
