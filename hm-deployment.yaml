@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: health-monitor
-          image: dimuthucs/hm:<<build_number>>
+          image: gratien20191317cccw/hm:<<build_number>>
           ports:
             - containerPort: 8081
          
