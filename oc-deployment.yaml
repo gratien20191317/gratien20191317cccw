@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo
+  name: demooc
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: demo
+      app: demooc
   template:
     metadata:
       labels:
-        app: demo
+        app: demooc
     spec:
       containers:
         - name: orbit-controller
@@ -23,10 +23,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: demo
+  name: demooc
 spec:
   selector:
-    app: demo
+    app: demooc
   ports:
     - protocol: TCP
       port: 8082
