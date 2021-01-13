@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo
+  name: democm
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: demo
+      app: democm
   template:
     metadata:
       labels:
-        app: demo
+        app: democm
     spec:
       containers:
         - name: constellation-manager
@@ -23,10 +23,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: demo
+  name: democm
 spec:
   selector:
-    app: demo
+    app: democm
   ports:
     - protocol: TCP
       port: 8080
