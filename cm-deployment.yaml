@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: constellation-manager
-          image: gratien20191317/cm:<<build_number>>
+          image: gratien20191317/qacm:<<build_number>>
           ports:
             - containerPort: 8080
          
