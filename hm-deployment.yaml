@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: health-monitor
-          image: gratien20191317/hm:<<build_number>>
+          image: gratien20191317/prodhm:<<build_number>>
           ports:
             - containerPort: 8081
          
