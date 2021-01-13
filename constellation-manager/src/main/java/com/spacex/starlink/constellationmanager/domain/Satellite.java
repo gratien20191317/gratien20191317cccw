@@ -14,6 +14,16 @@ public class Satellite {
     private String name;
     private String modelNumber;
 
+    public Satellite(){
+
+    }
+
+    public Satellite(Long id, String name, String modelNumber){
+        this.id = id;
+        this.name = name;
+        this.modelNumber = modelNumber;
+    }
+
     public Long getId() {
         return id;
     }
