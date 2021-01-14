@@ -24,10 +24,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: demohm
+  name: dev
 spec:
   selector:
-    app: demohm
+    app: dev
   ports:
     - protocol: TCP
       port: 8081
