@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface SatelliteRepository extends CrudRepository<Satellite, Long> {
 
-    String getHealthStatus();
+    List<Satellite> findAll();
 }
