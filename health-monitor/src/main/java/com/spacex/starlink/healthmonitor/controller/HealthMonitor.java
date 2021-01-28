@@ -13,8 +13,8 @@ public class HealthMonitor {
     @Autowired
     SatelliteService satelliteService;
 
-    @GetMapping("/health")
-    public ResponseEntity getHealth() {
-        return ResponseEntity.ok(this.satelliteService.getHealth());
+    @GetMapping("/health-status")
+    public ResponseEntity getHealthStatus() {
+        return ResponseEntity.ok(this.satelliteService.getHealthStatus());
     }
 }

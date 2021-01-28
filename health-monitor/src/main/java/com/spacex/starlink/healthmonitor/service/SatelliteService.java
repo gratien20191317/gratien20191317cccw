@@ -15,7 +15,7 @@ public class SatelliteService {
     @Autowired
     SatelliteRepository satelliteRepository;
 
-    public String getHealth(){
-        return satelliteRepository.getHealth();
+    public String getHealthStatus(){
+        return satelliteRepository.getHealthStatus();
     }
 }
