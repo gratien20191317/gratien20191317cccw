@@ -15,7 +15,7 @@ public class OrbitController {
 
     @PostMapping("/update-orbit-radius")
     public ResponseEntity addOrUpdateOrbitRadius(@RequestBody Satellite satellite) {
-        this.satelliteService.addOrUpdateRadius(satellite);
+        this.satelliteService.addOrUpdateOrbitRadius(satellite);
         return ResponseEntity.ok(satellite);
     }
 

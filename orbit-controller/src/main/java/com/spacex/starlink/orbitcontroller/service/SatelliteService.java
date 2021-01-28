@@ -15,7 +15,7 @@ public class SatelliteService {
     @Autowired
     SatelliteRepository satelliteRepository;
 
-    public Satellite addOrUpdateSatellite(Satellite satellite) {
+    public Satellite addOrUpdateOrbitRadius(Satellite satellite) {
         satelliteRepository.save(satellite);
         return satellite;
     }
