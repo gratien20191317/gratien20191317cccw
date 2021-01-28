@@ -1,4 +1,4 @@
-package com.spacex.starlink.constellationmanager.domain;
+package com.spacex.starlink.orbitcontroller.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
